@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../mars-ui/mars-ui.css">
+<link rel="stylesheet" href="../mars-ui/mars-ui.css?v=0.4.1">
 <title>Apex DRIVE — Org Chart</title>
 <style>
-.accent-bar { height: 4px; background: var(--apex-blue); width: 100%; }
+.accent-bar { height: 4px; background: var(--Apex-blue); width: 100%; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 .page-header {
-  background: linear-gradient(135deg, var(--apex-blue) 0%, var(--star-cluster) 100%);
+  background: linear-gradient(135deg, var(--Apex-blue) 0%, var(--star-cluster) 100%);
   color: #ffffff;
   padding: 24px 20px 20px;
   margin-bottom: 20px;
@@ -30,7 +30,7 @@ body {
   font-size: 13px;
 }
 .content-area { padding: 0 20px 20px; }
-h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
+h1 { color: var(--Apex-blue); margin-bottom: 5px; font-size: 22px; }
 .subtitle { color: var(--text-secondary); margin-bottom: 15px; font-size: 13px; }
 .stats { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
 .stat {
@@ -41,7 +41,7 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   min-width: 120px;
   border: 1px solid var(--border-soft);
 }
-.stat .num { font-size: 28px; font-weight: bold; color: var(--apex-blue); }
+.stat .num { font-size: 28px; font-weight: bold; color: var(--Apex-blue); }
 .stat .label { font-size: 11px; color: var(--text-secondary); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
 .controls { margin-bottom: 15px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .controls button {
@@ -68,13 +68,13 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
 .node { margin: 4px 0 4px 18px; padding: 6px 10px; border-radius: var(--shape-sm); font-size: 13px; }
 .node-fte { border-left: 3px solid var(--status-ontrack); background: var(--status-ontrack-bg); }
 .node-consultant { border-left: 3px solid var(--lane-ocm); background: var(--tint-ocm); }
-.node-meridian { border-left: 3px solid var(--lane-ocm); background: var(--tint-ocm); }
+.node-Meridian { border-left: 3px solid var(--lane-ocm); background: var(--tint-ocm); }
 .node-header { display: flex; align-items: center; gap: 6px; }
 .node-title { font-size: 11px; color: var(--text-secondary); margin-top: 1px; margin-left: 2px; }
 .tag { font-size: 9px; padding: 2px 6px; border-radius: var(--shape-sm); font-weight: bold; }
 .tag.fte { background: var(--status-ontrack); color: #fff; }
 .tag.consultant { background: var(--lane-ocm); color: #fff; }
-.tag.meridian { background: var(--lane-ocm); color: #fff; }
+.tag.Meridian { background: var(--lane-ocm); color: #fff; }
 .count {
   background: var(--star-cluster);
   color: #fff;
@@ -91,7 +91,7 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   font-size: 11px;
   padding: 2px 4px;
 }
-.toggle:hover { color: var(--apex-blue); }
+.toggle:hover { color: var(--Apex-blue); }
 .children { margin-top: 2px; }
 .children.collapsed { display: none; }
 .legend { display: flex; gap: 12px; margin-bottom: 15px; flex-wrap: wrap; }
@@ -125,7 +125,7 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   </div>
 
   <div class="legend">
-    <span><div class="swatch" style="background: var(--apex-blue)"></div>Executive</span>
+    <span><div class="swatch" style="background: var(--Apex-blue)"></div>Executive</span>
     <span><div class="swatch" style="background: var(--star-cluster)"></div>Manager/Lead</span>
     <span><div class="swatch" style="background: var(--status-ontrack)"></div>FTE (Apex)</span>
     <span><div class="swatch" style="background: var(--lane-ocm)"></div>Consultant / Meridian</span>
@@ -675,17 +675,17 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   </div>
   <div class="node-title">Toggle to expand/collapse</div>
   <div class="children collapsed" id="children-12">
-<div class="node node-meridian" style="">
+<div class="node node-Meridian" style="">
   <div class="node-header">
     <strong>Gabbert, Dean</strong>
- <span class="tag meridian">Meridian</span>
+ <span class="tag Meridian">Meridian</span>
   </div>
   <div class="node-title">Agile Lead Coach</div>
 </div>
-<div class="node node-meridian" style="">
+<div class="node node-Meridian" style="">
   <div class="node-header">
     <strong>Lindmeyer, Jason</strong>
- <span class="tag meridian">Meridian</span>
+ <span class="tag Meridian">Meridian</span>
   </div>
   <div class="node-title">Engagement Lead</div>
 </div>
@@ -696,10 +696,10 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   </div>
   <div class="node-title">Business Analyst</div>
 </div>
-<div class="node node-meridian" style="">
+<div class="node node-Meridian" style="">
   <div class="node-header">
     <strong>Shea, Robert</strong>
- <span class="tag meridian">Meridian</span>
+ <span class="tag Meridian">Meridian</span>
   </div>
   <div class="node-title">Consultant</div>
 </div>
@@ -710,10 +710,10 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   </div>
   <div class="node-title">Contractor</div>
 </div>
-<div class="node node-meridian" style="">
+<div class="node node-Meridian" style="">
   <div class="node-header">
     <strong>Tate, Brien</strong>
- <span class="tag meridian">Meridian</span>
+ <span class="tag Meridian">Meridian</span>
   </div>
   <div class="node-title">Transformation Advisor</div>
 </div>
@@ -1303,10 +1303,10 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   </div>
   <div class="node-title">Toggle to expand/collapse</div>
   <div class="children collapsed" id="children-17">
-<div class="node node-meridian" style="">
+<div class="node node-Meridian" style="">
   <div class="node-header">
     <strong>Teeter, Louise</strong>
- <span class="tag meridian">Meridian</span>
+ <span class="tag Meridian">Meridian</span>
   </div>
   <div class="node-title">Consultant / OCM</div>
 </div>
@@ -1317,10 +1317,10 @@ h1 { color: var(--apex-blue); margin-bottom: 5px; font-size: 22px; }
   </div>
   <div class="node-title">Contractor</div>
 </div>
-<div class="node node-meridian" style="">
+<div class="node node-Meridian" style="">
   <div class="node-header">
     <strong>Rashid, Muhammad O.</strong>
- <span class="tag meridian">Meridian</span>
+ <span class="tag Meridian">Meridian</span>
   </div>
   <div class="node-title">JIRA Specialist</div>
 </div>

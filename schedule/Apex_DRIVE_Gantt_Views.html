@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../mars-ui/mars-ui.css">
-<title>Apex DRIVE — Interactive Gantt</title>
+<link rel="stylesheet" href="../mars-ui/mars-ui.css?v=0.4.1">
+<title>Apex DRIVE — Gantt Chart</title>
 <style>
-.accent-bar{height:4px;background:var(--apex-blue);width:100%}
+.accent-bar{height:4px;background:var(--Apex-blue);width:100%}
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: var(--text-primary); background: var(--surface); line-height: 1.5; }
 
-  .header { background: linear-gradient(135deg, var(--apex-blue) 0%, var(--star-cluster) 100%); color: white; padding: 24px 32px; display: flex; align-items: center; gap: 20px; }
+  .header { background: linear-gradient(135deg, var(--Apex-blue) 0%, var(--star-cluster) 100%); color: white; padding: 24px 32px; display: flex; align-items: center; gap: 20px; }
   .header h1 { font-size: 22px; font-weight: 800; }
   .header .meta { margin-left: auto; font-size: 12px; color: var(--text-muted); text-align: right; }
 
@@ -18,7 +18,7 @@
 
   /* Progress bar */
   .progress-strip { display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--border-soft); border-radius: 8px; padding: 14px 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-  .progress-strip .label { font-size: 13px; font-weight: 700; color: var(--apex-blue); white-space: nowrap; }
+  .progress-strip .label { font-size: 13px; font-weight: 700; color: var(--Apex-blue); white-space: nowrap; }
   .progress-track { flex: 1; height: 10px; background: var(--border-soft); border-radius: 5px; overflow: hidden; position: relative; }
   .progress-fill { height: 100%; border-radius: 5px; transition: width 0.6s ease; }
   .progress-strip .week-info { font-size: 12px; color: var(--text-secondary); white-space: nowrap; }
@@ -30,24 +30,24 @@
   .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; }
   .legend-dot { width: 14px; height: 14px; border-radius: 3px; }
 
-  h2 { font-size: 18px; color: var(--apex-blue); margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--star-cluster); }
+  h2 { font-size: 18px; color: var(--Apex-blue); margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--star-cluster); }
 
   .phase-label { display: inline-block; font-size: 11px; font-weight: 700; color: white; padding: 3px 12px; border-radius: 4px; margin-bottom: 6px; }
 
   /* Tab navigation */
   .tab-bar { display: flex; gap: 4px; margin-bottom: 16px; border-bottom: 2px solid var(--border-soft); padding-bottom: 0; }
   .tab-btn { padding: 8px 18px; font-size: 13px; font-weight: 600; color: var(--text-secondary); background: none; border: none; border-bottom: 3px solid transparent; cursor: pointer; margin-bottom: -2px; transition: all 0.2s; }
-  .tab-btn:hover { color: var(--apex-blue); }
-  .tab-btn.active { color: var(--apex-blue); border-bottom-color: var(--apex-blue); }
+  .tab-btn:hover { color: var(--Apex-blue); }
+  .tab-btn.active { color: var(--Apex-blue); border-bottom-color: var(--Apex-blue); }
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
-  .overview-grid { overflow-x: auto; margin-bottom: 32px; }
+  .overview-grid { overflow-x: visible; margin-bottom: 32px; width: 100%; }
   .overview-table { border-collapse: collapse; width: 100%; min-width: 1200px; }
-  .overview-table th { background: var(--apex-blue); color: white; font-size: 10px; padding: 4px 2px; text-align: center; min-width: 48px; }
+  .overview-table th { background: var(--Apex-blue); color: white; font-size: 10px; padding: 4px 2px; text-align: center; min-width: 48px; }
   .overview-table th.lane-header { text-align: left; padding-left: 8px; min-width: 110px; }
   .overview-table th.current-wk { background: var(--status-atrisk); color: var(--text-primary); font-weight: 800; }
-  .overview-table th.done-wk { background: var(--apex-blue); }
+  .overview-table th.done-wk { background: var(--Apex-blue); }
   .overview-table td { padding: 3px; vertical-align: top; border: 1px solid var(--border-soft); min-width: 48px; height: 60px; }
   .overview-table td.lane-name { font-weight: 700; font-size: 11px; padding: 8px; border: none; white-space: nowrap; }
   .overview-table td.current-col { background: var(--status-atrisk-bg); }
@@ -58,7 +58,7 @@
 
   .phase-section, .lane-section { margin-bottom: 28px; }
   .week-grid { display: grid; gap: 8px; }
-  .week-header { font-size: 11px; font-weight: 700; color: var(--apex-blue); text-align: center; padding: 4px; background: var(--surface-dim); border-radius: 4px 4px 0 0; }
+  .week-header { font-size: 11px; font-weight: 700; color: var(--Apex-blue); text-align: center; padding: 4px; background: var(--surface-dim); border-radius: 4px 4px 0 0; }
   .week-header.current-wk { background: var(--status-atrisk); color: var(--text-atrisk); }
   .week-header.done-wk { background: var(--status-ontrack); color: var(--text-ontrack); }
   .week-date { font-size: 9px; color: var(--text-secondary); text-align: center; }
@@ -74,7 +74,7 @@
   .lane-card .activity-text { font-size: 12px; margin-top: 4px; }
   .lane-card.done-item { opacity: 0.55; }
 
-  .footer-bar{height:3px;background:linear-gradient(90deg,var(--apex-blue) 0%,var(--star-cluster) 50%,var(--apex-blue) 100%);margin-top:24px}
+  .footer-bar{height:3px;background:linear-gradient(90deg,var(--Apex-blue) 0%,var(--star-cluster) 50%,var(--Apex-blue) 100%);margin-top:24px}
   .footer { margin-top: 40px; padding: 12px 0; border-top:1px solid var(--border-soft); font-size: 11px; color: var(--text-secondary); display: flex; justify-content: space-between; }
 
   @media print { body { background: white; } .container { max-width: none; } .tab-bar { display: none; } .tab-panel { display: block !important; } }
@@ -253,7 +253,7 @@ const schedule=[
 
 const phases=[
   {name:"Phase 1: Foundation",desc:"Kickoff, training, relationship building",start:0,end:6,color:"var(--star-cluster)"},
-  {name:"Phase 2: Execution",desc:"Advanced training, sprint coaching, JIRA revamp",start:7,end:13,color:"var(--apex-blue)"},
+  {name:"Phase 2: Execution",desc:"Advanced training, sprint coaching, JIRA revamp",start:7,end:13,color:"var(--Apex-blue)"},
   {name:"Phase 3: Sustain",desc:"Self-sufficiency, maturity, handoff",start:14,end:20,color:"#53565A"}
 ];
 

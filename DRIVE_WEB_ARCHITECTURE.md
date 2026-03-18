@@ -126,7 +126,7 @@ The shell provides three navigation layers:
 - Left: Hamburger button → opens nav drawer
 - Center: Breadcrumb path: `Command Center › Section › Page` (each segment clickable)
 - Right: Home button (always visible)
-- Height: 56px, background: `--apex-blue`
+- Height: 56px, background: `--Apex-blue`
 
 #### Layer 2: Navigation Drawer (modal, slides from left)
 - Width: 280px
@@ -252,7 +252,7 @@ All CSS custom properties follow this taxonomy:
 
 | Prefix | Purpose | Example |
 |--------|---------|---------|
-| `--apex-*` | Client brand colors | `--apex-blue` |
+| `--Apex-*` | Client brand colors | `--Apex-blue` |
 | `--star-cluster` | Client secondary | |
 | `--bright-blue` | Client accent | |
 | `--lane-*` | Work type / swim lane | `--lane-training` |
@@ -273,7 +273,7 @@ All CSS custom properties follow this taxonomy:
 2. **NEVER** define `:root` overrides in page `<style>` blocks — tokens come from mars-ui.css only
 3. Page-specific CSS defines **layout and component structure only**
 4. Lane colors are **engagement-neutral** — they don't change between clients
-5. Brand colors (`--apex-*`, `--star-cluster`, `--bright-blue`) are **engagement-specific** — these change when porting to a new client
+5. Brand colors (`--Apex-*`, `--star-cluster`, `--bright-blue`) are **engagement-specific** — these change when porting to a new client
 
 ---
 
@@ -340,7 +340,7 @@ formats: [html]
 | Meridian Consulting | Meridian Consulting |
 | Metro City, ST | Metro City, ST |
 | All personal names | Generic replacements |
-| apex-logo-* | apex-logo-* |
+| Apex-logo-* | apex-logo-* |
 
 ### 8.3 Deploy Workflow (needs automation — see Kanban)
 
@@ -419,7 +419,7 @@ To spin up the DRIVE system for a new engagement (e.g., F&G proposal):
 
 1. **Copy** `mars-ui/` directory
 2. **Update** `:root` variables in mars-ui.css:
-   - `--apex-blue` → new client primary
+   - `--Apex-blue` → new client primary
    - `--star-cluster` → new client secondary
    - `--bright-blue` → new client accent
 3. **Update** `mars-shell.js` SITE_MAP with new navigation structure

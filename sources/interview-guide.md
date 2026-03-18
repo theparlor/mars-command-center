@@ -1,5 +1,5 @@
 ---
-id: apex-mars-interview-guide
+id: Apex-mars-interview-guide
 name: Apex DRIVE Interview Guide
 version: 1.0
 archetype: assessment_tool
@@ -34,7 +34,7 @@ The interactive HTML version persists all data to browser localStorage and suppo
 [
   {"id": "retailer", "name": "Retailer Solutions", "manager": "Sarah Chen", "headcount": 13},
   {"id": "DRIVE", "name": "DRIVE Platforms", "manager": "Raj Patel", "headcount": 15},
-  {"id": "apexcom", "name": "Apex.com (AEM/FE)", "manager": "Alex Kim", "headcount": 73},
+  {"id": "Apexcom", "name": "Apex.com (AEM/FE)", "manager": "Alex Kim", "headcount": 73},
   {"id": "techshare", "name": "TechShare", "manager": "Jordan Moore", "headcount": 16},
   {"id": "dealer_digital", "name": "Apex.net", "manager": "Chris Lee", "headcount": 25},
   {"id": "shared_svcs", "name": "Shared Services", "manager": "Pat Rivera (direct)", "headcount": 8}

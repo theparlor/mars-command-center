@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="mars-ui/mars-ui.css">
+<link rel="stylesheet" href="mars-ui/mars-ui.css?v=0.4.1">
 <title>Leadership Altitude &amp; Communications Atomic Model</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -107,7 +107,7 @@
   .matrix-cell .primary { color: var(--accent); font-weight: 500; }
   .matrix-cell .secondary { color: var(--text-muted); }
 
-  /* APEX VIEW */
+  /* Apex VIEW */
   .scenario-card { background: var(--surface); border: 1px solid var(--border-soft); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
   .scenario-card h3 { font-size: 16px; margin-bottom: 8px; }
   .scenario-card .scenario-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
@@ -126,7 +126,7 @@
 </style>
 </head>
 <body>
-<div class="accent-bar" style="height:4px;background:var(--apex-blue,#00205B);width:100%"></div>
+<div class="accent-bar" style="height:4px;background:var(--Apex-blue,#00205B);width:100%"></div>
 <div id="root"></div>
 <script type="text/babel">
 const { useState, useMemo } = React;
@@ -156,7 +156,7 @@ const ALTITUDES = [
       measures: ['Capability maturity (aggregate)', 'Adoption velocity', 'Talent retention'],
       learns: ['Where resistance lives', 'What incentives actually drive', 'Systemic blockers']
     },
-    apexExample: {
+    ApexExample: {
       who: 'Laura Matey (CIO), Pat Rivera (VP)',
       context: 'Sponsors the DRIVE proving ground; decides expansion path'
     }
@@ -184,7 +184,7 @@ const ALTITUDES = [
       measures: ['Domain maturity progression', 'Framework adoption', 'Assessment fidelity'],
       learns: ['What sticks vs. what slides', 'Emerging skill needs', 'Coaching effectiveness']
     },
-    apexExample: {
+    ApexExample: {
       who: 'Brien (Advisory), Jason (Engagement Lead)',
       context: 'Designs the transformation architecture; frames problems worth solving'
     }
@@ -212,7 +212,7 @@ const ALTITUDES = [
       measures: ['Adoption rates', 'Behavior change (30/60/90)', 'NPS/satisfaction'],
       learns: ['What teams actually need', 'Gaps between curriculum and practice', 'Coaching patterns']
     },
-    apexExample: {
+    ApexExample: {
       who: 'Dean (Agile Lead), Joelle (Training), Omar (JIRA)',
       context: 'Owns specific enablement products; delivers measurable capability'
     }
@@ -240,7 +240,7 @@ const ALTITUDES = [
       measures: ['Training completion', 'Coaching hours', 'Support queue health'],
       learns: ['Scheduling friction', 'Attendance patterns', 'Logistical blockers']
     },
-    apexExample: {
+    ApexExample: {
       who: 'Rob, Louise, Dan (Meridian delivery)',
       context: 'Executes coaching, training, and day-to-day engagement rhythm'
     }
@@ -268,7 +268,7 @@ const ALTITUDES = [
       measures: ['Skill progression', 'Learning application rate', 'Confidence growth'],
       learns: ['From curriculum', 'From coaching', 'From experimentation']
     },
-    apexExample: {
+    ApexExample: {
       who: 'Apex DRIVE team members (156 people)',
       context: 'Receives training, participates in coaching, applies new practices'
     }
@@ -325,8 +325,8 @@ const ACCOUNTABILITY_TYPES = [
   { id: 'learn', label: 'Learns From', color: '#EF6C00' }
 ];
 
-// === APEX SCENARIOS ===
-const APEX_SCENARIOS = [
+// === Apex SCENARIOS ===
+const Apex_SCENARIOS = [
   {
     title: 'Bi-weekly Status Report to Greg',
     desc: 'Engagement progress update for VP sponsor',
@@ -425,7 +425,7 @@ function App() {
     { id: 'altitudes', label: 'Altitude Stack' },
     { id: 'matrix', label: 'Accountability Matrix' },
     { id: 'atoms', label: 'Atom Builder' },
-    { id: 'apex', label: 'Apex Scenarios' }
+    { id: 'Apex', label: 'Apex Scenarios' }
   ];
 
   return (
@@ -461,7 +461,7 @@ function App() {
           atomDomain={atomDomain} setAtomDomain={setAtomDomain}
         />
       )}
-      {activeView === 'apex' && <ApexView />}
+      {activeView === 'Apex' && <ApexView />}
     </div>
   );
 }
@@ -555,9 +555,9 @@ function AltitudeStackView({ selectedAltitude, setSelectedAltitude, selectedAccT
             </div>
           </div>
           <div style={{ marginTop: '16px', padding: '12px 16px', background: 'rgba(88,166,255,0.08)', borderRadius: '8px', borderLeft: '3px solid var(--accent)' }}>
-            <div style={{ fontSize: '12px', color: 'var(--accent)', fontWeight: 600, marginBottom: '4px' }}>APEX MAPPING</div>
-            <div style={{ fontSize: '14px' }}><strong>{selected.apexExample.who}</strong></div>
-            <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{selected.apexExample.context}</div>
+            <div style={{ fontSize: '12px', color: 'var(--accent)', fontWeight: 600, marginBottom: '4px' }}>Apex MAPPING</div>
+            <div style={{ fontSize: '14px' }}><strong>{selected.ApexExample.who}</strong></div>
+            <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{selected.ApexExample.context}</div>
           </div>
         </div>
       )}
@@ -824,7 +824,7 @@ function ApexView() {
         <h2>Apex Engagement — Atomic Decomposition</h2>
         <p>Real scenarios from the DRIVE engagement decomposed into their communication atoms. Each scenario shows the dimensional tags that define how content should be framed, who it serves, and what channel it travels through. Use these as templates for consistent "tagging" across the Meridian team.</p>
       </div>
-      {APEX_SCENARIOS.map((s, i) => (
+      {Apex_SCENARIOS.map((s, i) => (
         <div key={i} className="scenario-card">
           <h3>{s.title}</h3>
           <div className="scenario-desc">{s.desc}</div>

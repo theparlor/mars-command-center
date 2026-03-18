@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="mars-ui/mars-ui.css">
+<link rel="stylesheet" href="mars-ui/mars-ui.css?v=0.4.1">
 <title>Apex DRIVE — Roadmap Session Observation Guide</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -17,7 +17,7 @@ body {
 
 .accent-bar {
   height: 4px;
-  background: var(--apex-blue);
+  background: var(--Apex-blue);
   width: 100%;
 }
 
@@ -301,7 +301,7 @@ body {
 }
 
 .btn-export:hover {
-  background: var(--apex-blue);
+  background: var(--Apex-blue);
 }
 
 .btn-clear {
@@ -336,7 +336,7 @@ body {
 }
 
 .timestamp-btn:hover {
-  background: var(--apex-blue);
+  background: var(--Apex-blue);
 }
 
 @media print {
@@ -571,7 +571,7 @@ document.getElementById('sessionDate').textContent = new Date().toLocaleDateStri
 
 let data = { people: [], sections: {}, hotTakes: {} };
 try {
-  const saved = localStorage.getItem('apex_obs_roadmap');
+  const saved = localStorage.getItem('Apex_obs_roadmap');
   if (saved) data = JSON.parse(saved);
 } catch(e) {}
 
@@ -590,7 +590,7 @@ function save() {
       notes: inputs[2]?.value || ''
     });
   });
-  try { localStorage.setItem('apex_obs_roadmap', JSON.stringify(data)); } catch(e) {}
+  try { localStorage.setItem('Apex_obs_roadmap', JSON.stringify(data)); } catch(e) {}
 }
 
 function restore() {
@@ -662,7 +662,7 @@ function exportData() {
 function clearAll() {
   if (confirm('Clear all observation notes? Cannot be undone.')) {
     data = { people: [], sections: {}, hotTakes: {} };
-    localStorage.removeItem('apex_obs_roadmap');
+    localStorage.removeItem('Apex_obs_roadmap');
     document.querySelectorAll('.note-area, .hot-take-area').forEach(ta => ta.value = '');
     document.getElementById('peopleList').innerHTML = '';
     for (let i = 0; i < 6; i++) addPersonRow('','','');
