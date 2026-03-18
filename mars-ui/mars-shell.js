@@ -36,7 +36,7 @@
         { label: 'Two-Week Look Ahead', icon: '👀', href: 'schedule/Apex_DRIVE_Two_Week_Look_Ahead.html' },
         { label: 'Activity Cards', icon: '🃏', href: 'schedule/Apex_DRIVE_Card_View.html' },
         { label: 'Decision Log', icon: '📝', href: 'schedule/Apex_DRIVE_Decision_Log.html' },
-        { label: 'Weekly Dashboard', icon: '📈', href: '../status_updates/Apex_DRIVE_Weekly_Status.html' },
+        { label: 'Weekly Dashboard', icon: '📈', href: 'Apex_DRIVE_Weekly_Status.html' },
       ]
     },
     // ─── SOW LANE: Training & Coaching ───
@@ -80,8 +80,8 @@
       anchor: 'reference',
       items: [
         { label: 'SOW Overview', icon: '📜', href: 'SOW_Overview_Diagram.html' },
-        { label: 'Design System', icon: '🎯', href: '../design/Design_System.html' },
-        { label: 'Co-Branding Strategy', icon: '🤝', href: '../design/brand/Co_Branding_Strategy.html' },
+        { label: 'Design System', icon: '🎯', href: 'Design_System.html' },
+        { label: 'Co-Branding Strategy', icon: '🤝', href: 'Co_Branding_Strategy.html' },
         { label: 'Schedule Email', icon: '✉️', href: 'schedule/Apex_DRIVE_Schedule_Email.html' },
         { label: 'Co-Branded Examples', icon: '💎', href: 'examples/Co_Branded_Example.html' },
       ]
