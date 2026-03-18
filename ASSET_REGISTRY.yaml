@@ -54,7 +54,7 @@ assets:
 
   # ─── COMMAND CENTER ───
   - id: command-center
-    name: "DRIVE Command Center"
+    name: "MARS Command Center"
     category: home
     source: sources/command-center.md
     source_version: "0.2.0"
