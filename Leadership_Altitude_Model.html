@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="mars-ui/mars-ui.css?v=0.4.3">
+<link rel="stylesheet" href="mars-ui/mars-ui.css?v=0.4.2">
 <title>Leadership Altitude &amp; Communications Atomic Model</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -107,7 +107,7 @@
   .matrix-cell .primary { color: var(--accent); font-weight: 500; }
   .matrix-cell .secondary { color: var(--text-muted); }
 
-  /* APEX VIEW */
+  /* SUBARU VIEW */
   .scenario-card { background: var(--surface); border: 1px solid var(--border-soft); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
   .scenario-card h3 { font-size: 16px; margin-bottom: 8px; }
   .scenario-card .scenario-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
@@ -325,8 +325,8 @@ const ACCOUNTABILITY_TYPES = [
   { id: 'learn', label: 'Learns From', color: '#EF6C00' }
 ];
 
-// === APEX SCENARIOS ===
-const APEX_SCENARIOS = [
+// === SUBARU SCENARIOS ===
+const SUBARU_SCENARIOS = [
   {
     title: 'Bi-weekly Status Report to Greg',
     desc: 'Engagement progress update for VP sponsor',
@@ -555,7 +555,7 @@ function AltitudeStackView({ selectedAltitude, setSelectedAltitude, selectedAccT
             </div>
           </div>
           <div style={{ marginTop: '16px', padding: '12px 16px', background: 'rgba(88,166,255,0.08)', borderRadius: '8px', borderLeft: '3px solid var(--accent)' }}>
-            <div style={{ fontSize: '12px', color: 'var(--accent)', fontWeight: 600, marginBottom: '4px' }}>APEX MAPPING</div>
+            <div style={{ fontSize: '12px', color: 'var(--accent)', fontWeight: 600, marginBottom: '4px' }}>SUBARU MAPPING</div>
             <div style={{ fontSize: '14px' }}><strong>{selected.apexExample.who}</strong></div>
             <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{selected.apexExample.context}</div>
           </div>
@@ -824,7 +824,7 @@ function ApexView() {
         <h2>Apex Engagement — Atomic Decomposition</h2>
         <p>Real scenarios from the DRIVE engagement decomposed into their communication atoms. Each scenario shows the dimensional tags that define how content should be framed, who it serves, and what channel it travels through. Use these as templates for consistent "tagging" across the Meridian team.</p>
       </div>
-      {APEX_SCENARIOS.map((s, i) => (
+      {SUBARU_SCENARIOS.map((s, i) => (
         <div key={i} className="scenario-card">
           <h3>{s.title}</h3>
           <div className="scenario-desc">{s.desc}</div>
