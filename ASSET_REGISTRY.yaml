@@ -54,7 +54,7 @@ assets:
 
   # ─── COMMAND CENTER ───
   - id: command-center
-    name: "MARS Command Center"
+    name: "DRIVE Command Center"
     category: home
     source: sources/command-center.md
     source_version: "0.2.0"
@@ -239,7 +239,7 @@ assets:
         built_from: "1.1.0"
         updated: "2026-03-18"
         status: CURRENT
-    notes: "Interactive app with per-team state, 11 categories, 49 questions. Regenerated on MARS UI Kit v0.2. Zero hardcoded hex. All colors via CSS variables."
+    notes: "Interactive app with per-team state, 11 categories, 49 questions. Regenerated on DRIVE UI Kit v0.2. Zero hardcoded hex. All colors via CSS variables."
 
   - id: observation-guide
     name: "Roadmap Session Observation Guide"
@@ -253,7 +253,7 @@ assets:
         built_from: "1.0.0"
         updated: "2026-03-06"
         status: STALE
-    notes: "Needs visual overhaul to MARS UI Kit. Content is stable."
+    notes: "Needs visual overhaul to DRIVE UI Kit. Content is stable."
 
   # ─── FRAMEWORKS & MODELS ───
   - id: leadership-altitude-model
