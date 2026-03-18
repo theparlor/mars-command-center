@@ -7,7 +7,7 @@
 <title>Co-Branding Planogram — Miro Staging Visual</title>
 <style>
   :root {
-    --Apex-blue: #00205B;
+    --subaru-blue: #00205B;
     --star-cluster: #1D4F91;
     --bright-blue: #00AEEF;
     --tb-navy: #032D3E;
@@ -27,19 +27,19 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #F3F4F6; color: var(--text-primary); padding: 2rem; }
 
   .planogram-title { text-align: center; margin-bottom: 2rem; }
-  .planogram-title h1 { font-size: 28px; font-weight: 700; color: var(--Apex-blue); }
+  .planogram-title h1 { font-size: 28px; font-weight: 700; color: var(--subaru-blue); }
   .planogram-title p { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
 
   /* === MASTER GRID === */
   .plano-grid { display: grid; grid-template-columns: 160px 1fr 1fr 160px; grid-template-rows: auto; gap: 0; max-width: 1400px; margin: 0; }
 
   /* === ROW HEADERS (left column) === */
-  .row-header { background: var(--Apex-blue); color: white; padding: 16px 12px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.15); min-height: 120px; }
+  .row-header { background: var(--subaru-blue); color: white; padding: 16px 12px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.15); min-height: 120px; }
   .row-header.first { border-radius: 8px 0 0 0; }
   .row-header.last { border-radius: 0 0 0 8px; }
 
   /* === COLUMN HEADERS === */
-  .col-header { background: var(--Apex-blue); color: white; padding: 14px 16px; text-align: center; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; border-bottom: 2px solid var(--bright-blue); }
+  .col-header { background: var(--subaru-blue); color: white; padding: 14px 16px; text-align: center; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; border-bottom: 2px solid var(--bright-blue); }
   .col-header.corner-l { border-radius: 8px 0 0 0; }
   .col-header.corner-r { border-radius: 0 8px 0 0; }
 
@@ -48,13 +48,13 @@
   .weight-cell.last { border-radius: 0 0 8px 0; }
   .weight-bar-v { width: 100%; height: 16px; border-radius: 8px; overflow: hidden; display: flex; margin: 6px 0 4px; }
   .weight-bar-v .seg { height: 100%; }
-  .weight-bar-v .seg.s { background: var(--Apex-blue); }
+  .weight-bar-v .seg.s { background: var(--subaru-blue); }
   .weight-bar-v .seg.c { background: var(--text-muted); }
   .weight-bar-v .seg.t { background: var(--tb-navy); }
 
   /* === CONTENT CELLS === */
   .cell { background: white; border-bottom: 1px solid var(--border-soft); border-right: 1px solid var(--border-soft); padding: 14px 16px; min-height: 120px; }
-  .cell h4 { font-size: 11px; font-weight: 700; color: var(--Apex-blue); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .cell h4 { font-size: 11px; font-weight: 700; color: var(--subaru-blue); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
   .cell .spec { font-size: 11px; color: var(--text-secondary); line-height: 1.6; }
   .cell .spec strong { color: var(--text-primary); }
   .cell .tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 9px; font-weight: 700; text-transform: uppercase; margin-top: 6px; }
@@ -64,7 +64,7 @@
 
   /* === SLIDE MOCKUPS (mini previews) === */
   .mini-slide { width: 100%; aspect-ratio: 16/9; border: 1.5px solid var(--border-soft); border-radius: 4px; overflow: hidden; margin: 8px 0; position: relative; background: white; }
-  .mini-slide .hero { background: var(--Apex-blue); height: 28%; display: flex; align-items: center; padding: 0 8px; }
+  .mini-slide .hero { background: var(--subaru-blue); height: 28%; display: flex; align-items: center; padding: 0 8px; }
   .mini-slide .hero .s-mark { background: rgba(255,255,255,0.25); border-radius: 2px; padding: 1px 6px; font-size: 7px; color: white; font-weight: 700; }
   .mini-slide .hero .title { font-size: 8px; color: white; font-weight: 700; margin-left: 6px; }
   .mini-slide .content { height: 58%; padding: 4px 8px; }
@@ -72,10 +72,10 @@
   .mini-slide .content .bar.short { width: 60%; }
   .mini-slide .ft { height: 14%; border-top: 1px solid var(--border-soft); display: flex; align-items: center; justify-content: space-between; padding: 0 6px; }
   .mini-slide .ft .tb-txt { font-size: 5px; color: var(--text-muted); }
-  .mini-slide .ft .s-sm { font-size: 5px; color: var(--Apex-blue); font-weight: 700; }
+  .mini-slide .ft .s-sm { font-size: 5px; color: var(--subaru-blue); font-weight: 700; }
   .mini-slide .ft .tb-box { background: var(--tb-navy); border-radius: 1px; padding: 1px 4px; font-size: 4px; color: white; font-weight: 600; }
 
-  .mini-slide.divider { background: var(--Apex-blue); }
+  .mini-slide.divider { background: var(--subaru-blue); }
   .mini-slide.divider .crest { width: 20px; height: 20px; background: rgba(255,255,255,0.2); border-radius: 50%; margin: 12px auto 4px; display: flex; align-items: center; justify-content: center; font-size: 8px; color: white; }
   .mini-slide.divider .d-title { text-align: center; font-size: 8px; color: white; font-weight: 700; }
   .mini-slide.divider .d-sub { text-align: center; font-size: 5px; color: rgba(255,255,255,0.5); margin-top: 2px; }
@@ -84,7 +84,7 @@
   .mini-slide.closing .logos { display: flex; align-items: center; justify-content: center; height: 100%; gap: 12px; }
   .mini-slide.closing .logos .brand { text-align: center; }
   .mini-slide.closing .logos .brand .name { font-size: 9px; font-weight: 700; }
-  .mini-slide.closing .logos .brand.sub .name { color: var(--Apex-blue); }
+  .mini-slide.closing .logos .brand.sub .name { color: var(--subaru-blue); }
   .mini-slide.closing .logos .brand.tb .name { color: var(--tb-navy); font-size: 8px; }
   .mini-slide.closing .logos .divl { width: 1px; height: 30px; background: var(--border-soft); }
 
@@ -98,7 +98,7 @@
 
   /* === LEGEND === */
   .legend { grid-column: 1 / -1; margin-top: 1.5rem; background: white; border: 1px solid var(--border-soft); border-radius: 8px; padding: 16px 20px; }
-  .legend h3 { font-size: 14px; font-weight: 700; color: var(--Apex-blue); margin-bottom: 10px; }
+  .legend h3 { font-size: 14px; font-weight: 700; color: var(--subaru-blue); margin-bottom: 10px; }
   .legend-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
   .legend-item { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--text-secondary); }
   .legend-item .dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
@@ -133,7 +133,7 @@
     <span class="tag logo">Logo Image</span>
     <div class="mini-slide">
       <div class="hero">
-        <div class="s-mark">★ Apex</div>
+        <div class="s-mark">★ APEX</div>
         <div class="title">Status Overview</div>
       </div>
       <div class="content"><div class="bar"></div><div class="bar short"></div></div>
@@ -173,10 +173,10 @@
     </div>
     <span class="tag logo">Logo Image</span>
     <div class="mini-slide">
-      <div style="height:4px;background:var(--Apex-blue)"></div>
-      <div style="padding:6px 8px;font-size:8px;font-weight:700;color:var(--Apex-blue)">Workstream Updates</div>
+      <div style="height:4px;background:var(--subaru-blue)"></div>
+      <div style="padding:6px 8px;font-size:8px;font-weight:700;color:var(--subaru-blue)">Workstream Updates</div>
       <div class="content" style="height:60%"><div class="bar"></div><div class="bar short"></div><div class="bar"></div></div>
-      <div class="ft"><div class="tb-txt">Prepared by Meridian Consulting</div><div class="s-sm">Apex</div></div>
+      <div class="ft"><div class="tb-txt">Prepared by Meridian Consulting</div><div class="s-sm">APEX</div></div>
     </div>
   </div>
   <div class="cell">
@@ -250,9 +250,9 @@
     <span class="tag logo">Logo Image</span>
     <div class="mini-slide closing">
       <div class="logos">
-        <div class="brand sub"><div class="name">★ Apex</div><div style="font-size:5px;color:var(--text-muted)">of America</div></div>
+        <div class="brand sub"><div class="name">★ APEX</div><div style="font-size:5px;color:var(--text-muted)">of America</div></div>
         <div class="divl"></div>
-        <div class="brand tb"><div class="name">Meridian</div><div style="font-size:5px;color:var(--text-muted)">Solutions</div></div>
+        <div class="brand tb"><div class="name">TURNBERRY</div><div style="font-size:5px;color:var(--text-muted)">Solutions</div></div>
       </div>
     </div>
   </div>
@@ -472,7 +472,7 @@
   <div class="legend">
     <h3>Legend & Design Tokens</h3>
     <div class="legend-grid">
-      <div class="legend-item"><div class="dot" style="background:var(--Apex-blue)"></div> Apex Blue #00205B (PMS 281)</div>
+      <div class="legend-item"><div class="dot" style="background:var(--subaru-blue)"></div> Apex Blue #00205B (PMS 281)</div>
       <div class="legend-item"><div class="dot" style="background:var(--star-cluster)"></div> Star Cluster #1D4F91 (PMS 7686)</div>
       <div class="legend-item"><div class="dot" style="background:var(--bright-blue)"></div> Bright Blue #00AEEF (PMS 299)</div>
       <div class="legend-item"><div class="dot" style="background:var(--tb-navy)"></div> Meridian Navy #032D3E</div>

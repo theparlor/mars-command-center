@@ -7,7 +7,7 @@
 <style>
   :root {
     /* === BRAND: Apex (Client Accent) === */
-    --Apex-blue: #00205B;
+    --subaru-blue: #00205B;
     --star-cluster: #1D4F91;
     --bright-blue: #00AEEF;       /* PMS 299C — data viz accent (OQ-3 DECIDED) */
     /* === SERVICE LANES === */
@@ -45,7 +45,7 @@
     /* === CALLOUT === */
     --yellow-callout: #FFFDE7;
     --yellow-border: #FBC02D;
-    /* === Meridian PARTNER (for non-engagement contexts) === */
+    /* === TURNBERRY PARTNER (for non-engagement contexts) === */
     --tb-navy: #032D3E;
     --tb-accent: #349ED8;
     --tb-teal: #06597A;
@@ -54,23 +54,23 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-primary); background: var(--white); }
 
-  .top-bar { height: 4px; background: var(--Apex-blue); }
+  .top-bar { height: 4px; background: var(--subaru-blue); }
   header { background: var(--white); border-bottom: 1px solid var(--border-soft); padding: 2rem 2rem 1.5rem; }
-  header h1 { font-size: 26px; font-weight: 700; color: var(--Apex-blue); margin-bottom: 4px; }
+  header h1 { font-size: 26px; font-weight: 700; color: var(--subaru-blue); margin-bottom: 4px; }
   header .sub { font-size: 13px; color: var(--text-secondary); }
   header .meta { font-size: 11px; color: var(--text-muted); margin-top: 8px; }
 
   main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
   section { margin-bottom: 3rem; }
-  h2 { font-size: 20px; font-weight: 700; color: var(--Apex-blue); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--Apex-blue); }
+  h2 { font-size: 20px; font-weight: 700; color: var(--subaru-blue); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--subaru-blue); }
   h3 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
   h4 { font-size: 13px; font-weight: 600; color: var(--text-primary); margin: 1rem 0 0.5rem; }
   p, li { font-size: 13px; color: var(--text-secondary); margin-bottom: 0.5rem; }
   ul { margin-left: 1.5rem; margin-bottom: 1rem; }
-  code { background: var(--stat-bg); padding: 2px 6px; border-radius: 3px; font-family: 'SF Mono', 'Courier New', monospace; font-size: 12px; color: var(--Apex-blue); }
+  code { background: var(--stat-bg); padding: 2px 6px; border-radius: 3px; font-family: 'SF Mono', 'Courier New', monospace; font-size: 12px; color: var(--subaru-blue); }
 
-  .principle { background: linear-gradient(135deg, rgba(0,32,91,0.02), rgba(29,79,145,0.02)); border-left: 4px solid var(--Apex-blue); padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin-bottom: 1rem; }
-  .principle h4 { color: var(--Apex-blue); margin: 0 0 0.4rem; }
+  .principle { background: linear-gradient(135deg, rgba(0,32,91,0.02), rgba(29,79,145,0.02)); border-left: 4px solid var(--subaru-blue); padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin-bottom: 1rem; }
+  .principle h4 { color: var(--subaru-blue); margin: 0 0 0.4rem; }
   .principle p { margin: 0; }
 
   .callout { padding: 1rem 1.25rem; border-radius: 6px; margin: 1rem 0; font-size: 12.5px; }
@@ -91,7 +91,7 @@
   .swatch-use { font-size: 10px; color: var(--text-secondary); margin-top: 2px; }
 
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 0.5rem 0 1.5rem; }
-  th { background: var(--Apex-blue); color: var(--white); padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; }
+  th { background: var(--subaru-blue); color: var(--white); padding: 8px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; }
   td { padding: 8px 12px; border-bottom: 1px solid var(--border-soft); vertical-align: top; }
   tr:nth-child(even) { background: var(--stat-bg); }
 
@@ -107,7 +107,7 @@
 
   .icon-circle { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; color: white; font-weight: 700; font-size: 14px; }
 
-  .footer-bar { height: 3px; background: linear-gradient(90deg, var(--Apex-blue) 0%, var(--star-cluster) 50%, var(--Apex-blue) 100%); margin-top: 2rem; }
+  .footer-bar { height: 3px; background: linear-gradient(90deg, var(--subaru-blue) 0%, var(--star-cluster) 50%, var(--subaru-blue) 100%); margin-top: 2rem; }
   footer { padding: 1.5rem 2rem; text-align: center; font-size: 11px; color: var(--text-muted); background: var(--stat-bg); }
 </style>
 </head>
@@ -281,9 +281,9 @@
   <p>Every Slide 1 opens with a full-width navy rectangle from y=0.08 to y=1.58 (height 1.5"). The 0.08" accent bar sits above it. Title text sits inside in white. This creates the "authority" anchor for the deck.</p>
   <table>
     <tr><th>Element</th><th>Position</th><th>Properties</th></tr>
-    <tr><td>Accent bar</td><td>x:0, y:0, w:10, h:0.08</td><td>fill: ApexBlue</td></tr>
-    <tr><td>Hero band</td><td>x:0, y:0.08, w:10, h:1.5</td><td>fill: ApexBlue</td></tr>
-    <tr><td>Apex logo (white)</td><td>x:0.5, y:0.25</td><td>Apex-logo-black-long.png, w:1.8" — upper-left dominant position</td></tr>
+    <tr><td>Accent bar</td><td>x:0, y:0, w:10, h:0.08</td><td>fill: apexBlue</td></tr>
+    <tr><td>Hero band</td><td>x:0, y:0.08, w:10, h:1.5</td><td>fill: apexBlue</td></tr>
+    <tr><td>Apex logo (white)</td><td>x:0.5, y:0.25</td><td>apex-logo-black-long.png, w:1.8" — upper-left dominant position</td></tr>
     <tr><td>Title text</td><td>x:2.6, y:0.2</td><td>32pt, Calibri Light, bold, white</td></tr>
     <tr><td>Phase subtitle</td><td>x:2.6, y:0.85</td><td>16pt, Calibri, white, 20% transparent</td></tr>
     <tr><td>Tagline</td><td>x:2.6, y:1.2</td><td>11pt, Calibri, white, 40% transparent</td></tr>
@@ -324,7 +324,7 @@
   <p>Single-pane-of-glass architecture with five zones stacked vertically:</p>
   <table>
     <tr><th>Zone</th><th>Height</th><th>Content</th></tr>
-    <tr><td>Navy Decisions Band</td><td>1.0"</td><td>Key decisions, asks, blockers — white text on ApexBlue</td></tr>
+    <tr><td>Navy Decisions Band</td><td>1.0"</td><td>Key decisions, asks, blockers — white text on apexBlue</td></tr>
     <tr><td>Training | Coaching</td><td>2.2"</td><td>50/50 split, lane color top bands, icon circles</td></tr>
     <tr><td>Jira | OCM | Logistics</td><td>1.5"</td><td>3-column split, lane color top bands</td></tr>
     <tr><td>Team Bar</td><td>0.675"</td><td>Apex team leads — Natalie, Marc, Kadeem, Gino, Kevin</td></tr>
@@ -425,21 +425,21 @@
   <h3>Logo Inventory</h3>
   <table>
     <tr><th>File</th><th>Dimensions</th><th>Ratio</th><th>Use On</th><th>Description</th></tr>
-    <tr><td><code>Apex-logo-black-long.png</code></td><td>1077 × 316</td><td>3.41:1</td><td>Dark backgrounds</td><td>White text + color badge. For navy hero bands, dark cards.</td></tr>
-    <tr><td><code>Apex-white-long.png</code></td><td>1127 × 306</td><td>3.68:1</td><td>Light backgrounds</td><td>Dark gray text + color badge. For white slides, headers.</td></tr>
-    <tr><td><code>Apex-logo-dark-vertical.png</code></td><td>466 × 277</td><td>1.68:1</td><td>Light backgrounds</td><td>Badge-only mark (no wordmark). Compact spaces.</td></tr>
-    <tr><td><code>Apex-logo-white-vertical.png</code></td><td>641 × 452</td><td>1.42:1</td><td>Any background</td><td>Full vertical lockup — badge above, Apex text below.</td></tr>
+    <tr><td><code>apex-logo-black-long.png</code></td><td>1077 × 316</td><td>3.41:1</td><td>Dark backgrounds</td><td>White text + color badge. For navy hero bands, dark cards.</td></tr>
+    <tr><td><code>apex-white-long.png</code></td><td>1127 × 306</td><td>3.68:1</td><td>Light backgrounds</td><td>Dark gray text + color badge. For white slides, headers.</td></tr>
+    <tr><td><code>apex-logo-dark-vertical.png</code></td><td>466 × 277</td><td>1.68:1</td><td>Light backgrounds</td><td>Badge-only mark (no wordmark). Compact spaces.</td></tr>
+    <tr><td><code>apex-logo-white-vertical.png</code></td><td>641 × 452</td><td>1.42:1</td><td>Any background</td><td>Full vertical lockup — badge above, APEX text below.</td></tr>
   </table>
 
   <h3>Placement Rules</h3>
   <table>
     <tr><th>Context</th><th>Logo Variant</th><th>Position</th><th>Size</th></tr>
-    <tr><td>PPTX title slide (navy hero band)</td><td>Apex-logo-black-long.png</td><td>Right-aligned within hero, vertically centered</td><td>~1.8" wide</td></tr>
-    <tr><td>PPTX interior slides (footer)</td><td>Apex-white-long.png</td><td>Footer area, right-aligned</td><td>~1.2" wide</td></tr>
-    <tr><td>HTML header bar</td><td>Apex-white-long.png</td><td>Left of title, vertically centered</td><td>180px wide</td></tr>
-    <tr><td>HTML footer</td><td>Apex-logo-dark-vertical.png</td><td>Centered or right-aligned</td><td>60px height</td></tr>
-    <tr><td>Email header</td><td>Apex-white-long.png</td><td>Inline or left-aligned</td><td>200px wide</td></tr>
-    <tr><td>Favicon / small icon</td><td>Apex-logo-dark-vertical.png</td><td>Centered</td><td>32–64px</td></tr>
+    <tr><td>PPTX title slide (navy hero band)</td><td>apex-logo-black-long.png</td><td>Right-aligned within hero, vertically centered</td><td>~1.8" wide</td></tr>
+    <tr><td>PPTX interior slides (footer)</td><td>apex-white-long.png</td><td>Footer area, right-aligned</td><td>~1.2" wide</td></tr>
+    <tr><td>HTML header bar</td><td>apex-white-long.png</td><td>Left of title, vertically centered</td><td>180px wide</td></tr>
+    <tr><td>HTML footer</td><td>apex-logo-dark-vertical.png</td><td>Centered or right-aligned</td><td>60px height</td></tr>
+    <tr><td>Email header</td><td>apex-white-long.png</td><td>Inline or left-aligned</td><td>200px wide</td></tr>
+    <tr><td>Favicon / small icon</td><td>apex-logo-dark-vertical.png</td><td>Centered</td><td>32–64px</td></tr>
   </table>
 
   <div class="callout yellow">
@@ -451,7 +451,7 @@
 </section>
 
 <!-- ================================================================
-     9. Apex PPTX TEMPLATE REFERENCE
+     9. APEX PPTX TEMPLATE REFERENCE
      ================================================================ -->
 <section>
   <h2>9. Apex PPTX Template Reference</h2>
@@ -529,19 +529,19 @@
     <tr><th>Slide Type</th><th>Apex Logo</th><th>Meridian</th><th>Visual Weight</th></tr>
     <tr>
       <td><strong>Title Slide</strong><br><em>"The Handshake"</em></td>
-      <td>White horizontal (<code>Apex-logo-black-long.png</code>)<br>Upper-left in hero band · x:0.5, y:0.25 · w:1.8"<br>Dominant read position (F-pattern eye tracking)</td>
+      <td>White horizontal (<code>apex-logo-black-long.png</code>)<br>Upper-left in hero band · x:0.5, y:0.25 · w:1.8"<br>Dominant read position (F-pattern eye tracking)</td>
       <td>Logo image, lower-right · x:7.8, y:5.15 · w:1.2" · 85% opacity<br>Attribution position — "authored by" without competing</td>
       <td>Apex 60% / Meridian 20% / Content 20%</td>
     </tr>
     <tr>
       <td><strong>Interior Slides</strong><br><em>"Content is King"</em></td>
-      <td>Dark horizontal (<code>Apex-white-long.png</code>)<br>Footer right · x:8.0, y:5.20 · w:1.0"<br>Small, unobtrusive, brand continuity</td>
+      <td>Dark horizontal (<code>apex-white-long.png</code>)<br>Footer right · x:8.0, y:5.20 · w:1.0"<br>Small, unobtrusive, brand continuity</td>
       <td><strong>Text only</strong> — "Prepared by Meridian Consulting"<br>Footer left · x:0.5, y:5.30 · Calibri 8pt · #9CA3AF<br>Avoids "dueling logos" in footer</td>
       <td>Content 85% / Navigation 10% / Branding 5%</td>
     </tr>
     <tr>
       <td><strong>Section Divider</strong><br><em>"The Crest"</em></td>
-      <td>Vertical badge (<code>Apex-logo-dark-vertical.png</code>)<br>Centered above section title · h:0.8"<br>Compact "crest" presiding over phase transition</td>
+      <td>Vertical badge (<code>apex-logo-dark-vertical.png</code>)<br>Centered above section title · h:0.8"<br>Compact "crest" presiding over phase transition</td>
       <td><strong>Text only</strong> — "Meridian Consulting" · bottom center, small</td>
       <td>Apex 40% / Content 50% / Meridian 10%</td>
     </tr>

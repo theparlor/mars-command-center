@@ -16,11 +16,11 @@
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--surface-dim); color: var(--text-primary); line-height: 1.55; }
 
 /* ── ACCENT BAR ── */
-.accent-bar { height: 4px; background: var(--Apex-blue); }
+.accent-bar { height: 4px; background: var(--subaru-blue); }
 
 /* ── HERO HEADER ── */
 .hero {
-  background: linear-gradient(135deg, var(--Apex-blue) 0%, var(--star-cluster) 60%, #2a6db5 100%);
+  background: linear-gradient(135deg, var(--subaru-blue) 0%, var(--star-cluster) 60%, #2a6db5 100%);
   color: white; padding: 48px 48px 40px; position: relative; overflow: hidden;
 }
 .hero::after {
@@ -56,7 +56,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Ne
   text-decoration: none; color: var(--text-primary); background: var(--surface-dim);
   border: 1px solid var(--border-soft); transition: all 0.15s; white-space: nowrap;
 }
-.quick-nav a:hover { background: var(--Apex-blue); color: white; border-color: var(--Apex-blue); }
+.quick-nav a:hover { background: var(--subaru-blue); color: white; border-color: var(--subaru-blue); }
 
 /* ── MAIN LAYOUT ── */
 .main { max-width: 1300px; padding: 32px 48px 64px; /* left-aligned, not centered */ }
@@ -349,7 +349,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Ne
           </div>
         </div>
         <div style="margin-top:12px;display:flex;gap:12px;">
-          <div style="text-align:center;"><span style="font-size:20px;font-weight:800;color:var(--Apex-blue)">54</span><br><span style="font-size:10px;color:var(--text-secondary)">FTEs</span></div>
+          <div style="text-align:center;"><span style="font-size:20px;font-weight:800;color:var(--subaru-blue)">54</span><br><span style="font-size:10px;color:var(--text-secondary)">FTEs</span></div>
           <div style="text-align:center;"><span style="font-size:20px;font-weight:800;color:#F57C00">102</span><br><span style="font-size:10px;color:var(--text-secondary)">Consultants</span></div>
         </div>
       </div>
@@ -567,7 +567,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Ne
 </div><!-- end .main -->
 
 <!-- ════════ FOOTER ════════ -->
-<div style="height:3px;background:linear-gradient(90deg,var(--Apex-blue) 0%,var(--star-cluster) 50%,var(--Apex-blue) 100%);"></div>
+<div style="height:3px;background:linear-gradient(90deg,var(--subaru-blue) 0%,var(--star-cluster) 50%,var(--subaru-blue) 100%);"></div>
 <div class="page-footer">
   <div>Apex DRIVE Agile Transformation · Prepared by Meridian Consulting</div>
   <div>Command Center v0.2 · Updated March 2026</div>
@@ -586,9 +586,9 @@ document.querySelectorAll('.quick-nav a').forEach(a => {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         // Update active state
         document.querySelectorAll('.quick-nav a').forEach(n => n.style.background = '');
-        this.style.background = 'var(--Apex-blue)';
+        this.style.background = 'var(--subaru-blue)';
         this.style.color = 'white';
-        this.style.borderColor = 'var(--Apex-blue)';
+        this.style.borderColor = 'var(--subaru-blue)';
       }
     }
   });
@@ -608,9 +608,9 @@ window.addEventListener('scroll', () => {
     a.style.color = '';
     a.style.borderColor = '';
     if (a.getAttribute('href') === '#' + current) {
-      a.style.background = 'var(--Apex-blue)';
+      a.style.background = 'var(--subaru-blue)';
       a.style.color = 'white';
-      a.style.borderColor = 'var(--Apex-blue)';
+      a.style.borderColor = 'var(--subaru-blue)';
     }
   });
 });
